@@ -1,0 +1,153 @@
+.App {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #151515;
+  max-width: 100%;
+  min-height: 80px;
+  justify-content: center;
+}
+
+.logo-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.logo {
+  display: flex;
+  max-width: 100px;
+  padding: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info h1 {
+  margin-bottom: 0px;
+}
+
+.info h2 {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+App > .game-settings {
+  margin-top: 30px;
+}
+
+.game-settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.game-settings label {
+  margin-right: 10px;
+  display: flex;
+  align-self: center;
+  color: black;
+}
+
+.game-settings * {
+  display: flex;
+  align-self: center;
+}
+.select-container {
+  display: block;
+}
+
+.select {
+  position: relative;
+  display: inline-block;
+}
+.select select {
+  font-family: "Arial";
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 25px 10px 10px;
+  outline: 0;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  background: #ffffff;
+  color: #2a2a2a;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.select select::-ms-expand {
+  display: none;
+}
+.select select:hover,
+.select select:focus {
+  border-radius: 3px;
+  background: #fdfdfd;
+  background-color: #fdfdfd;
+}
+.select select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.select_arrow {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  margin: 0px;
+  padding: 0px;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0px 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+  border-top-color: #424242;
+}
+.select select:disabled ~ .select_arrow {
+  border-top-color: #cccccc;
+}
+
+.game-settings > .button-container {
+  display: flex;
+  align-self: center;
+  flex-basis: 100%;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+#button-start:disabled {
+  background-color: #efefef;
+  color: #ababab;
+  border-color: #b1b1b1;
+  cursor: auto;
+}
+
+.game-settings #button-start {
+  margin-top: 10px;
+}
+
+#button-start {
+  max-width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  color: #fff;
+  background-color: red;
+  align-self: center;
+  border-color: #d60000;
+  border-radius: 3px;
+  cursor: pointer;
+}
